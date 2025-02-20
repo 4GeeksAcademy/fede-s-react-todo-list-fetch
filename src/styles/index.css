@@ -9,3 +9,16 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.hide{
+    display: none;
+    cursor: pointer;
+}
+
+.li:hover  .hide{
+    display: block;
+    color: red;
+}
+
+body {
+    background: linear-gradient(to right, blue 0%, green 50%, red 100%);
+}
