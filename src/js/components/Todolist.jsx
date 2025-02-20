@@ -38,14 +38,14 @@ const Todolist = () => {
                                 <ul className="list-group rounded-0">
                                     {tasks.length === 0 ? <div className='list-group-item border-0 d-flex  align-items-center bg-light ps-0'>Please add something to do</div> : ""}
                                     {tasks.map((task, index) => (
-                                        <li key={index} className={`list-group-item border-0 d-flex align-items-center ps-0 bg-light li ${index === tasks.length - 1 ? "" : "border-bottom"} `}>
+                                        <li key={index} className="list-group-item border-0 d-flex align-items-center ps-0 bg-light li border-bottom">
                                             {task}
                                             <i className="fa-regular fa-circle-xmark ms-auto hide" onClick={() => handleDeleteTask(index)}></i>
                                         </li>
 
                                     ))}
                                 </ul>
-                                <p><small>{`${tasks.length} items left`}</small></p>
+                                <p className="pt-3"><small>{`${tasks.length} items left`}</small></p>
                             </div>
                         </div>
                     </div>
